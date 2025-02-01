@@ -9,7 +9,9 @@ Using LLM to set up Infrastructure, Automation (CI/CD), Containerization and Orc
 
 I'm logging every action I take in [LOG.md](LOG.md) file. That's the most interesting reading here.
 
-The idea is simple: create a sample app and setup all the infrastructure and automation for it.
+The idea is simple: create a sample app and setup all the infrastructure and automation for it. Of course, no deep dive and just basic example, but I'm curious.
+
+Probably, I'll eventually get it done. Yet, I'd like to figure out how fast it will be done.
 
 **Plan:**
 
