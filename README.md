@@ -1,6 +1,6 @@
 # DevOpsLLM
 
-> OFK, I know, that DevOps is a culture! 
+> OFС, I know, that DevOps is a culture! 
 > Yet, nowadays `DevOps` means much more then that.
 
 > So welcome to a story of how IaaC, CI/CD and so much more can be done using LLMs!
