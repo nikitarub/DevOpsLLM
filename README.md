@@ -1,4 +1,10 @@
 # DevOpsLLM
+
+> OFK, I know, that DevOps is a culture! 
+> Yet, nowadays `DevOps` meand much more then that.
+
+> So welcome to a story of how IaaC, CI/CD and so much more can be done using LLMs!
+
 Using LLM to set up Infrastructure, Automation (CI/CD), Containerization and Orchestration, etc. As well as the test app itself.
 
 I'm logging every action I take in [LOG.md](LOG.md) file. That's the most interesting reading here.
