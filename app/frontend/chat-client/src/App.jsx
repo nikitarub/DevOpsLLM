@@ -4,21 +4,22 @@ function App() {
     const [messages, setMessages] = useState([]);
     const [inputValue, setInputValue] = useState('');
 
-    useEffect(() => {
-        // Define an async function inside useEffect
-        const fetchLatestMessageAsync = async () => {
-            try {
-                const response = await fetch('http://localhost:8000/api/messages/latest');
-                if (response.ok) {
-                    const latestMessage = await response.json();
-                    setMessages(prevMessages => [...prevMessages, latestMessage]);
-                }
-            } catch (error) {
-                console.error("Failed to fetch latest message:", error);
+    const fetchLatestMessageAsync = async () => {
+        try {
+            const response = await fetch('http://localhost:8000/api/messages/latest');
+            if (response.ok) {
+                const latestMessage = await response.json();
+                console.log(latestMessage);
+                
+                setMessages(latestMessage);
             }
-        };
+        } catch (error) {
+            console.error("Failed to fetch latest message:", error);
+        }
+    };
 
-        // Call the async function
+
+    useEffect(() => {
         fetchLatestMessageAsync();
     }, []);
 
@@ -47,6 +48,7 @@ function App() {
 
             if (response.ok) {
                 const newMessage = await response.json();
+                console.log("newMessage: ", newMessage);                
                 setMessages(prevMessages => [...prevMessages, { role: 'user', content: inputValue }, newMessage]);
                 setInputValue('');
             }
